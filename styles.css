@@ -1,4 +1,5 @@
 <link href="https://allfont.es/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css" />
+<link href="https://allfont.es/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
 
 /*estilos para el menu de la pagina*/
 *{
@@ -13,7 +14,7 @@ body{
 .navegacion{
   width: 1000px;
   margin:30px auto;
-  background: white;
+  background: #b3b3b3;
 }
 .navegacion ul{
   list-style: none;
@@ -28,12 +29,12 @@ body{
   font-size: 25px;
   padding: 15px 40px;
   color: #333333;
-  font-family:franklin, gothic;
+  font-family:'franklin gothic',arial;
   text-decoration: none;
 }
 
 .menu li a:hover {
-  color: #F0B429;
+  color:  #F0B429;
   transition: all .3s;
 }
 .submenu{
@@ -49,7 +50,7 @@ body{
 .submenu li a{
   display:block;
   color: #fff;
-  font-family: franklin;
+  font-family: 'franklin gothic', arial;
   text-decoration: none;
 }
 .menu li:hover .submenu {
@@ -61,7 +62,56 @@ body{
 
 .t_principal {
   text-align: center;
-  color: #F0B429;
+  color:  #F47920;
   font-size: 40px;
 
+}
+.t_2{
+  font-size: 28px;
+  font-family: 'franklin gothic',arial;
+}
+.t_3{
+  font-size: 22px;
+  font-family: 'franklin gothic',arial;
+}
+.t_4{
+  font-size: 18px;
+  font-family: 'franklin gothic',arial;
+}
+.parrafo{
+  font-size: 16px;
+  font-family: 'Franklin Gothic Book', arial;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 120%;
+}
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin:auto;
+  padding: 60px;
+  background: white;
+  margin-top: 50px;
+  border-top: 6px solid #F0B429;
+
+}
+
+
+/*estilos para las imagenes*/
+.ima_derecha{
+  float: right;
+  width: 300px;
+}
+.ima_derecha2{
+  float: right;
+  width: 400px;
+}
+.container img {
+
+float: right;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+.container aside {
+  width: 70%;
 }

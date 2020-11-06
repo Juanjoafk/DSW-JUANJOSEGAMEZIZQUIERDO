@@ -14,8 +14,8 @@
           <li> <a href="Inicio.html">Inicio</a></li>
           <li> <a href="#">Conceptos</a>
               <ul class="submenu">
-                <li> <a href="Conceptos01.html">Conceptos 1</a></li>
-                <li> <a href="Conceptos02.html">Conceptos 2</a></li>
+                <li> <a href="Conceptos01.html">Git</a></li>
+                <li> <a href="Conceptos02.html">GitHUb</a></li>
               </ul>
           </li>
           <li> <a href="#">Recursos</a>
@@ -36,6 +36,98 @@
       </nav>
     </header>
 
+     <div class="container">
+       <img class="ima_derecha"src="Img/logo_git.png" alt="">
+       <h1 class="t_2">¿Que es Git?</h1>
+       <p class="parrafo">Git es un programa de control de versiones VCS por sus siglas en ingles
+       Al decir que es un sistema de control de versiones nos referimos exactamente a eso, el
+      te ayuda a llevar un control de todas las versiones que haz ido creadon de tu programa
+    a lo largo del tiempo, de esta manera es muy util por si quieres llevar el desarrollo de tu
+   software por caminos diferentes y aun asi conservar la version inicial, o master como la llama
+ Git. </p>
+     <br>
+     <h2 class="t_3"> Caracteristicas de Git</h2>
+     <p class="parrafo">
+       Entre las principales caracteristicas de Git encontramos que guarda una copia de casi
+       todas tus operaciones de forma local, esto sirve mas que nada para siempre tener todo tu
+       trabajo almacenado en tu computadora, claro esta que tambien permite almacenar las versiones
+       de tu programa en la nube pero eso lo veremos mas adelante; tambien podemos destacar
+       entre las caracteristicas de Git el hecho de que la mayoria de sus acciones solo añadiran
+        informacion a tu repositorio, es decir, es muy dificil que un archivo se pierda o se
+        corrompa de forma permanente utilizando Git como sistema de control de versiones.
+     </p>
+     <br>
+     <h2 class="t_3">Los tres estados de tu informacion</h2>
+      <p class="parrafo">
+        Esta es la parte mas importante para que puedas continuar de forma adecuada tu aprendizaje
+        asi que presta atencion, Git tiene tres estados principales en los que se pueden encontrar
+        tus archivos, es decir, dependiendo de los comandos que escribas o no (mas abajo hay
+        una lista de comandos basicos para Git con su descripcion) tu informacion se encontrara
+        de una forma o de otra. <br>
+        Estos tres estados son: confirmado (committed), modificado (modified), y preparado (staged). <br>
+        Confirmado: Significa que los datos estan almacenados de manera segura en tu base de datos local. <br>
+        Modificado: Significa que has modificado el archivo pero todavia no lo has confirmado a tu base de
+        datos local. <br>
+        Preparado: Significa que has marcado un archivo modificado en su version actual para que
+        vaya en tu proxima confirmacion, es decir que lo tienes seleccionado para guardar.
+      </p>
+      <br>
+      <img class="ima_derecha2"src="Img/flujo.PNG" alt="">
+      <p class="parrafo">
+        Esto nos lleva a las tres secciones principales de un proyecto de Git: El directorio de Git
+        (Git directory), el directorio de trabajo (working directory), y el area de preparcion
+        (staging area). <br>
+        El directorio de Git es donde se almacenan los metadatos y la base de datos de objetos para tu
+        proyecto. <br>
+        El directorio de trabajo es una copia de una version del proyecto. <br>
+        El area de preparacion es un archivo, generalmente contenido en tu directorio de Git, que
+        almacena informacion acerca de lo que va a ir en tu proxima confirmacion (commit),<br>
+        para que te des una idea mas clara el flujo de trabajo en Git es algo asi: <br>
+        <ul>
+          <li>Modificas una serie de archivos en tu directorio de trabajo</li>
+          <li>Preparas los archivos, anadiendolos a tu area de preparacion</li>
+          <li>Confirmas los cambios, lo que toma los archivos tal y como estan en el area de preparacion
+           y almacena esa copia instantanea de manera permanente en tu directorio de git.</li>
+        </ul>
+
+      </p>
+      <p class="parrafo">Antes de continuar les dejare el link directo a la pagina de Git para que lo puedan descargar e instalar y asi
+      puedan continuar la explicacion practicando por su cuenta.</p>
+      <p class="parrafo">
+        Para usar Git solo deberas instalarlo en tu SO desde la pagina
+        oficial de <a href="https://git-scm.com/"> Git</a>, allí encontraras
+        la<br> opcion de descargar "Git Bash" que es la interfaz de Git por
+        linea de comandos y la que es<br> recomendable aprender a usar.
+      </p>
+      <h2 class="t_3">Comandos basicos para la consola de Git</h2>
+      <img class="ima_derecha2"src="Img/git_bash.PNG" alt="">
+
+      <ul>
+        <li>
+          <p class="parrafo">git init: Iniciar Git en una nueva carpeta, basicamente le estas
+          diciendo en que carpeta debe iniciar a guardar tus archivos locales</p>
+        </li>
+        <li>
+          <p class="parrafo">git add: Este es el comando para añadir los archivos a tu area de preparacion y posteriormente guardarlos con el siguiente comando</p>
+        </li>
+        <li>
+          <p class="parrafo">git commit -m "texto": Este es el comando que deberas utilizar para guardar tus archivos, en el lugar donde dice "texto"
+          lo ideal es que escribas los cambios que realizaste en ese guardado (commit)</p>
+        </li>
+        <li>
+          <p class="parrafo">git branch "texto": Este comando sirve para añadir una nueva rama de tu proyecto, para experimentar o simplemente para crear
+          dos o varias versiones del programa y desarrollarlas de forma paralela</p>
+        </li>
+        <li>
+          <p class="parrafo">git branch: el comando escrito sin ningun nombre te servira para saber en que rama estas trabajando</p>
+        </li>
+        <li>
+          <p class="parrafo">git checkout "nombre": te permitira cambiar a la rama del nombre que escribas y asi trabajar en ella.</p>
+        </li>
+      </ul>
+      <p class="parrafo">En el apartado de recursos encontraras un video bastante corto explicandote estos comandos en la practica.</p>
+     </div>
+     <p class="parrafo">Scott Chacon(2020) git-scm, recuperado de <a href="https://normasapa.com/como-citar-referenciar-paginas-web-con-normas-apa/">git-scm</a> </p>
 
   </body>
 </html>
