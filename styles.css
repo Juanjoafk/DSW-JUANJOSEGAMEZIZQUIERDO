@@ -119,3 +119,6 @@ margin-bottom: 20px;
 .container aside {
   width: 70%;
 }
+.pdf {
+  float: right;
+}
